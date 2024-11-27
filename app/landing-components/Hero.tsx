@@ -45,11 +45,11 @@ export default function Hero() {
             {/* Members Section */}
             <div className='mt-14 flex items-center justify-center space-x-2'>
               <div className='flex -space-x-4'>
-                <Image src='https://celesia.io/public/users/user1.jpg' alt='Member 1' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <Image src='https://celesia.io/public/users/user2.jpg' alt='Member 2' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <Image src='https://celesia.io/public/users/user3.jpg' alt='Member 3' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <Image src='https://celesia.io/public/users/user4.jpg' alt='Member 4' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <Image src='https://celesia.io/public/users/user5.jpg' alt='Member 5' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://celesia.io/users/user1.jpg' alt='Member 1' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://celesia.io/users/user2.jpg' alt='Member 2' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://celesia.io/users/user3.jpg' alt='Member 3' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://celesia.io/users/user4.jpg' alt='Member 4' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://celesia.io/users/user5.jpg' alt='Member 5' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
               </div>
               <div>
                 <div className='flex items-center text-gray-900 dark:text-white space-x-1 ml-3'>
