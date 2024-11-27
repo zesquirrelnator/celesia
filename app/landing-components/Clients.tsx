@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Spotify from "./logos/SpotifyLogo.png";
 import FitBit from "./logos/Fitbit_logo.png";
 import Google from "./logos/Google_logo.png";
@@ -14,7 +15,7 @@ export default function Clients() {
         {
           [Spotify, FitBit, Google, Noom].map((logo, index) => (
             <div key={index} className='flex justify-center col-span-1 max-h-12 w-full object-contain dark:opacity-80'>
-              <img src={logo.src} alt="Client logo" className='max-h-12 w-full object-contain dark:opacity-80' />
+              <Image src={logo.src} alt="Client logo" className='max-h-12 w-full object-contain dark:opacity-80' />
             </div>
           ))
         }

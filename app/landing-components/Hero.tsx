@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -30,7 +31,7 @@ export default function Hero() {
               Analytics Platform
             </h1>
             <p className='mt-6 mx-auto max-w-2xl text-lg leading-8 text-gray-600 dark:text-white'>
-              Don't just guess. Find the cause of your problems with Celesia.
+              Don&apos;t just guess. Find the cause of your problems with Celesia.
             </p>
             <div className='mt-10 flex items-center justify-center gap-x-6'>
               <a
@@ -44,11 +45,11 @@ export default function Hero() {
             {/* Members Section */}
             <div className='mt-14 flex items-center justify-center space-x-2'>
               <div className='flex -space-x-4'>
-                <img src='https://shipfa.st/_next/static/media/lennard.a8caddd5.jpeg' alt='Member 1' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <img src='https://shipfa.st/_next/static/media/wahab.c0419676.jpeg' alt='Member 2' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <img src='https://shipfa.st/_next/static/media/naveen.311d3eb1.jpeg' alt='Member 3' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <img src='https://shipfa.st/_next/static/media/artificery.ba1049ef.jpeg' alt='Member 4' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <img src='https://shipfa.st/_next/static/media/dunsin.c7d35d82.jpeg' alt='Member 5' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://shipfa.st/_next/static/media/lennard.a8caddd5.jpeg' alt='Member 1' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://shipfa.st/_next/static/media/wahab.c0419676.jpeg' alt='Member 2' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://shipfa.st/_next/static/media/naveen.311d3eb1.jpeg' alt='Member 3' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://shipfa.st/_next/static/media/artificery.ba1049ef.jpeg' alt='Member 4' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src='https://shipfa.st/_next/static/media/dunsin.c7d35d82.jpeg' alt='Member 5' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
               </div>
               <div>
                 <div className='flex items-center text-gray-900 dark:text-white space-x-1 ml-3'>

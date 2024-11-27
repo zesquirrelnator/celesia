@@ -1,4 +1,4 @@
-import { features, navigation, faqs, footerNavigation, testimonials } from './landing-components/contentSections';
+import { features, navigation, footerNavigation } from './landing-components/contentSections';
 import Header from './landing-components/Header';
 import Hero from './landing-components/Hero';
 import Clients from './landing-components/Clients';
