@@ -1,6 +1,11 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 import Image from 'next/image';
+import user1 from './logos/users/user1.jpg';
+import user2 from './logos/users/user2.jpg';
+import user3 from './logos/users/user3.jpg';
+import user4 from './logos/users/user4.jpg';
+import user5 from './logos/users/user5.jpg';
 
 export default function Hero() {
   return (
@@ -45,11 +50,11 @@ export default function Hero() {
             {/* Members Section */}
             <div className='mt-14 flex items-center justify-center space-x-2'>
               <div className='flex -space-x-4'>
-                <Image src='https://celesia.io/users/user1.jpg' alt='Member 1' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <Image src='https://celesia.io/users/user2.jpg' alt='Member 2' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <Image src='https://celesia.io/users/user3.jpg' alt='Member 3' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <Image src='https://celesia.io/users/user4.jpg' alt='Member 4' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
-                <Image src='https://celesia.io/users/user5.jpg' alt='Member 5' className='w-10 h-10 rounded-full border-2 border-white dark:border-white' />
+                <Image src={user1.src} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
+                <Image src={user2.src} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
+                <Image src={user3.src} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
+                <Image src={user4.src} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
+                <Image src={user5.src} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
               </div>
               <div>
                 <div className='flex items-center text-gray-900 dark:text-white space-x-1 ml-3'>

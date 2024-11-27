@@ -15,7 +15,7 @@ export default function Clients() {
         {
           [Spotify, FitBit, Google, Noom].map((logo, index) => (
             <div key={index} className='flex justify-center col-span-1 max-h-12 w-full object-contain dark:opacity-80'>
-              <Image src={logo.src} alt="Client logo" className='max-h-12 w-full object-contain dark:opacity-80' />
+              <Image src={logo.src} alt="" width={200} height={48} className='max-h-12 w-full object-contain dark:opacity-80' />
             </div>
           ))
         }
