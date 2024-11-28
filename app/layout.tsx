@@ -47,6 +47,7 @@ export default function RootLayout({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Celesia - The Life Analytics Platform" />
+        <meta name="google-site-verification" content="LFMTLH1CWTMF2_2lFmoZARNo_UtTCO3FqpRy7_nQVTM" />
       </head>
       <body>
         {children}
