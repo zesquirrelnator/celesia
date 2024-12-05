@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { PHProvider } from './providers'
+import dynamic from 'next/dynamic'
+
 
 export const metadata: Metadata = {
   title: "Celesia - The Life Analytics Platform",
@@ -23,6 +26,10 @@ export const metadata: Metadata = {
     ],
   },
 };
+
+const PostHogPageView = dynamic(() => import('./PostHogPageView'), {
+  ssr: false,
+})
 
 export default function RootLayout({
   children,
@@ -49,9 +56,12 @@ export default function RootLayout({
         <meta property="og:image:alt" content="Celesia - The Life Analytics Platform" />
         <meta name="google-site-verification" content="LFMTLH1CWTMF2_2lFmoZARNo_UtTCO3FqpRy7_nQVTM" />
       </head>
-      <body>
-        {children}
-      </body>
+      <PHProvider>
+        <body>
+          <PostHogPageView /> 
+          {children}
+        </body>
+      </ PHProvider>
     </html>
   );
 }
