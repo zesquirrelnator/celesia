@@ -26,7 +26,7 @@ export default function Hero() {
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 100 20'
                   fill='none'
-                  stroke='rgba(125, 196, 255, 0.7)' /* Blue color */
+                  stroke='rgba(125, 196, 255, 0.7)'
                   strokeWidth='3.5'
                   strokeLinecap='round'
                 >
