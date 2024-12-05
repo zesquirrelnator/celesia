@@ -1,12 +1,12 @@
 "use client";
 import { useState } from 'react';
 import { HiBars3 } from 'react-icons/hi2';
-import { FaArrowRight } from "react-icons/fa6";
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { Dialog } from '@headlessui/react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '@/public/CelesiaTransparent.png';
+import GetStarted from './GetStarted';
 
 interface NavigationItem {
   name: string;
@@ -57,12 +57,7 @@ export default function Header({ navigation }: { navigation: NavigationItem[] })
           ))}
           
           {/* Get Started Button */}
-          <Link href='https://app.celesia.io/'>
-            <div className='flex items-center duration-300 ease-in-out font-semibold text-white bg-blue-400 hover:bg-blue-500 dark:text-white px-4 py-2 rounded-lg ml-4 transform hover:scale-105'>
-              Get Started 
-              <FaArrowRight size='1.1rem' className='ml-1 transition-transform duration-300 ease-in-out transform hover:translate-x-1' />
-            </div>
-          </Link>
+          <GetStarted />
         </div>
       </nav>
       <Dialog as='div' className='lg:hidden' open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -96,12 +91,10 @@ export default function Header({ navigation }: { navigation: NavigationItem[] })
                   </Link>
                 ))}
               </div>
-              <div className='py-6'>
-                <Link href='/login'>
-                  <div className='flex justify-end items-center duration-300 ease-in-out font-semibold text-white bg-blue-400 hover:bg-blue-500 dark:text-white px-4 py-2 rounded-lg w-fit'>
-                      Get Started <FaArrowRight size='1.1rem' className='ml-1' />
-                  </div>
-                </Link>
+              <div className='py-6 justify-end'>
+                <div className='w-fit' >
+                  <GetStarted />
+                </div>
               </div>
             </div>
           </div>

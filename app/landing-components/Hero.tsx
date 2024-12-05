@@ -1,4 +1,3 @@
-import { FaArrowRight } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 import Image from 'next/image';
 import user1 from './logos/users/user1.jpg';
@@ -6,6 +5,7 @@ import user2 from './logos/users/user2.jpg';
 import user3 from './logos/users/user3.jpg';
 import user4 from './logos/users/user4.jpg';
 import user5 from './logos/users/user5.jpg';
+import GetStarted from "./GetStarted";
 
 export default function Hero() {
   return (
@@ -39,12 +39,7 @@ export default function Hero() {
               Don&apos;t just guess. Find the cause of your problems with Celesia.
             </p>
             <div className='mt-10 flex items-center justify-center gap-x-6'>
-              <a
-                href="https://app.celesia.io/"
-                className='flex items-center duration-300 ease-in-out font-semibold text-white bg-blue-400 hover:bg-blue-500 dark:text-white px-4 py-2 rounded-lg ml-4 transform hover:scale-105'
-              >
-                Get Started <FaArrowRight size='1.1rem' className='ml-1' />
-              </a>
+              <GetStarted />
             </div>
 
             {/* Members Section */}
