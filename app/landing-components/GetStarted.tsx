@@ -1,11 +1,13 @@
 "use client";
-import { posthogClient } from '@/lib/posthog'
+import { usePostHog } from 'posthog-js/react';
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
 
 export default function GetStarted() {
+    const posthog = usePostHog();
+
     const handleClick = () => {
-      posthogClient.capture("cta_clicked", { location: "Hero" });
+      posthog.capture("cta_clicked", { location: "Hero" });
       console.log("clicked!");
       window.location.href = "https://app.celesia.io/";
     };
