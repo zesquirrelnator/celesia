@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import PHProvider from '@/lib/posthog';
-import dynamic from 'next/dynamic';
 import PostHogPageView from "@/lib/posthog-pageview";
 
 export const metadata: Metadata = {
