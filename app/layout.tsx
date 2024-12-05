@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import PHProvider from '@/lib/posthog';
-import PostHogPageView from "@/lib/posthog-pageview";
 
 export const metadata: Metadata = {
   title: "Celesia - The Life Analytics Platform",
   description: "The Life Analytics Platform",
   keywords: "life analytics, data analysis, Celesia, health tracking",
   authors: [{ name: "Georges Casassovici" }],
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
     title: "Celesia - The Life Analytics Platform",
@@ -53,7 +51,6 @@ export default function RootLayout({
       </head>
       <PHProvider>
         <body>
-          <PostHogPageView />
           {children}
         </body>
       </PHProvider>
