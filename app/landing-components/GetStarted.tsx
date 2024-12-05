@@ -8,7 +8,6 @@ export default function GetStarted() {
 
     const handleClick = () => {
       posthog.capture("cta_clicked", { location: "Hero" });
-      console.log("clicked!");
       window.location.href = "https://app.celesia.io/";
     };
   

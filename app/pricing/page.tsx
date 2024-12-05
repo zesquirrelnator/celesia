@@ -5,10 +5,16 @@ import Header from "@/app/landing-components/Header";
 import ToggleSwitch from "./components/ToggleSwitch";
 import { navigation } from '@/app/landing-components/contentSections';
 import { BottomGradient, TopGradient } from "../landing-components/Hero";
-import Link from "next/link";
+import { usePostHog } from "posthog-js/react";
 
 export default function PricingPage() {
   const [isYearly, setIsYearly] = useState(false);
+  const posthog = usePostHog();
+
+  const handleClick = () => {
+    posthog.capture("cta_clicked", { location: "Pricing" });
+    window.location.href = "https://app.celesia.io/";
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-tl from-blue-100 to-purple-50 dark:bg-gray-900 py-12 px-6 lg:px-8 text-center">
@@ -47,11 +53,9 @@ export default function PricingPage() {
               <span className="text-blue-100 mr-2">✔</span> Priority support
             </li>
           </ul>
-          <Link href="https://app.celesia.io/">
-            <button className="mt-8 w-full py-3 rounded-lg bg-white text-blue-500 hover:bg-gray-100">
-              Sign up
-            </button>
-          </Link>
+          <button onClick={handleClick} className="mt-8 w-full py-3 rounded-lg bg-white text-blue-500 hover:bg-gray-100">
+            Sign up
+          </button>
           <p className="mt-4 text-sm text-gray-200">Get started for free</p>
         </div>
       </div>
