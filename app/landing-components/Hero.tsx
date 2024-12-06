@@ -41,11 +41,11 @@ export default function Hero() {
             {/* Members Section */}
             <div className='mt-14 flex items-center justify-center space-x-2'>
               <div className='flex -space-x-4'>
-                <Image src="https://imagedelivery.net/9cJ9RngIBqc6Mh8P9gMDGQ/19d48447-d549-4425-6685-82a332b1dc00/public" alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
-                <Image src="https://imagedelivery.net/9cJ9RngIBqc6Mh8P9gMDGQ/b465f092-266c-4018-ca7e-9fa80507b300/public" alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
-                <Image src="https://imagedelivery.net/9cJ9RngIBqc6Mh8P9gMDGQ/f954ca9d-71e4-45d2-0d95-0c21e49a8b00/public" alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
+                <Image src={"https://imagedelivery.net/9cJ9RngIBqc6Mh8P9gMDGQ/19d48447-d549-4425-6685-82a332b1dc00/public"} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
+                <Image src={"https://imagedelivery.net/9cJ9RngIBqc6Mh8P9gMDGQ/b465f092-266c-4018-ca7e-9fa80507b300/public"} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
+                <Image src={"https://imagedelivery.net/9cJ9RngIBqc6Mh8P9gMDGQ/f954ca9d-71e4-45d2-0d95-0c21e49a8b00/public"} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
                 <Image src={user3.src} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
-                <Image src="https://imagedelivery.net/9cJ9RngIBqc6Mh8P9gMDGQ/e1039d18-b07d-4f8b-6df6-efc7181dfd00/public" alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
+                <Image src={"https://imagedelivery.net/9cJ9RngIBqc6Mh8P9gMDGQ/e1039d18-b07d-4f8b-6df6-efc7181dfd00/public"} alt='' width={100} height={100} className='w-10 h-10 rounded-full border-2 border-white dark:border-white object-cover'/>
               </div>
               <div>
                 <div className='flex items-center text-gray-900 dark:text-white space-x-1 ml-3'>
