@@ -36,7 +36,6 @@ export default function RootLayout({
         <meta name="description" content="The Life Analytics Platform" />
         <meta name="keywords" content="digital health tools, health data visualization, comprehensive health insights, personal health solutions, proactive health managment" />
         <meta name="author" content="Celesia Team" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
         <meta property="og:title" content="Celesia - The Life Analytics Platform" />
